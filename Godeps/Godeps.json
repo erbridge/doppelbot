@@ -20,15 +20,15 @@
 		},
 		{
 			"ImportPath": "github.com/erbridge/gotwit/bot",
-			"Rev": "1c58250d355bdb802ce600b2e6c1ba8d38831ce8"
+			"Rev": "f4ba883818bf7a637c2b7eaa1d184dd9e1fbeb1e"
 		},
 		{
 			"ImportPath": "github.com/erbridge/gotwit/callback",
-			"Rev": "1c58250d355bdb802ce600b2e6c1ba8d38831ce8"
+			"Rev": "f4ba883818bf7a637c2b7eaa1d184dd9e1fbeb1e"
 		},
 		{
 			"ImportPath": "github.com/erbridge/gotwit/twitter",
-			"Rev": "1c58250d355bdb802ce600b2e6c1ba8d38831ce8"
+			"Rev": "f4ba883818bf7a637c2b7eaa1d184dd9e1fbeb1e"
 		},
 		{
 			"ImportPath": "github.com/garyburd/go-oauth/oauth",

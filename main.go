@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"regexp"
 
 	"github.com/ChimeraCoder/anaconda"
@@ -30,7 +31,18 @@ func createRepeatCallback(b *bot.Bot) func(anaconda.Tweet) {
 }
 
 func main() {
-	con, acc, _ := twitter.LoadConfig("secrets.json")
+	var (
+		con twitter.ConsumerConfig
+		acc twitter.AccessConfig
+	)
+
+	f := "secrets.json"
+	if _, err := os.Stat(f); err == nil {
+		con, acc, _ = twitter.LoadConfigFile(f)
+	} else {
+		con, acc, _ = twitter.LoadConfigEnv()
+	}
+
 	b := bot.New("doppelbot", con, acc)
 
 	repeatTweet := createRepeatCallback(&b)
