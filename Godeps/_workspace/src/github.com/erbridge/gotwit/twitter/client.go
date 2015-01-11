@@ -43,7 +43,7 @@ func (c *Client) Start() (err error) {
 		return err
 	}
 
-	go c.handleStream()
+	c.handleStream()
 
 	return nil
 }

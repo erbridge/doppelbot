@@ -50,10 +50,5 @@ func main() {
 	b.RegisterCallback(callback.Mention, repeatTweet)
 
 	b.Start()
-
-	// Stop the program from exiting.
-	var input string
-	fmt.Scanln(&input)
-
 	b.Stop()
 }
