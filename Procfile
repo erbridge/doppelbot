@@ -1,1 +1,1 @@
-web: doppelbot
+worker: doppelbot
